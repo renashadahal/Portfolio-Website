@@ -1,0 +1,76 @@
+.{
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    background: lightskyblue;
+    padding: 2.47%;
+    width: 25%;
+    float: left;
+    margin: 0;
+
+}
+
+.intro {
+    background: lavender;
+    padding: 2%;
+    width: 46%;
+    float: left;
+    margin: 0%;
+}
+
+.more {
+    background: beige;
+    padding: 2%;
+    width: 46%;
+    float: left;
+    margin: 0%;
+}
+
+.clear {
+    clear: both;
+}
+
+nav {
+    display: inline-block;
+    background: #ff98bb;
+    padding: 0.5%;
+    width: 69%;
+    float: left;
+
+}
+
+nav ul li {
+    float: left;
+    background: #f7bed2;
+    padding: 0.65%;
+    margin: 0.5%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background: linen;
+    width: 100%;
+    padding: 3%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+
+ button {
+    padding: 0.5%;
+    background: lightpink;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+ }
