@@ -1,180 +1,251 @@
-body{
-	margin: 0;
-	background-color: #ffbbd1;
-	 font-family: "Poiret One", sans-serif;
-  	font-weight: 600;
-  	font-style: normal;
+body {
+    margin: 0;
+    background-color: #ffbbd1;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px;
-	background-color:#ffdfe9;
-	height: 10vh;
-	border-bottom: solid;
-	border-color: brown;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffdfe9;
+    height: 10vh;
+    border-bottom: solid 1px brown;
 }
 
 header .logo img {
-	height: 70px;
-	
+    height: 70px;
 }
 
 header nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding-right: 50px;
-	gap: 50px;
-
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 50px;
+    gap: 50px;
 }
 
 header nav ul li {
-	margin-left: 20px;
-	display: flex;
-	justify-content: space-around;
-	font-family: "Poiret One", sans-serif;
-  	font-weight: bold;
-  	font-style:normal ;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 header nav ul li a {
-	display: block;
-	padding: 10px 20px;
-	border-radius: 10px;
-	text-decoration: none;  
-	color: brown;
-	background-color:#ffafc8 ;
-	opacity: 0.8;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: brown;
+    background-color: #ffafc8;
+    opacity: 0.8;
 }
 
 header nav ul li a:hover {
-	opacity: 1; 
+    opacity: 1;
 }
 
-
 .bg {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	position: relative;
-	padding: 50px 20px;
-	background-color:#ffdfe9 ;
-	height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px;
+    background-color: #ffdfe9;
+    height: 60vh;
 }
 
 .bg .backgroundblock {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(#ffafc8,#FF69B4);
-	z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffafc8, #FF69B4);
+    z-index: -1;
 }
 
 .bg .profileimage {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	margin-bottom: 20px;
-
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
 }
+
 .profileimage img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .text {
-	max-width: 800px;
-	z-index: 1;
-	color:brown ;
+    max-width: 800px;
+    z-index: 1;
+    color: brown;
 }
 
 .text h1 {
-	font-size: 70px;
-	letter-spacing: 3px;
-	margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 0;
+    font-weight: 800;
 }
 
- .text p {
-	font-size: 20px;
-	margin-bottom: 15px;
+.text p {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .learnmore {
-	display: inline-block;
-	padding: 10px 20px;
-	color: white;
-	text-decoration: none;
-	border-radius: 5px;
+    display: inline-block;
+    padding: 7px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
-
-
-
 
 button {
-	background-color: white;
-	color: brown;
-	opacity: 0.8;
-	border: none;
-	height: 30px;
-	padding: 7px;
+    background-color: white;
+    color: brown;
+    opacity: 0.8;
+    border: none;
+    height: 30px;
+    padding: 7px;
+    cursor: pointer;
 }
 
-button:hover{
-	opacity: 1;
+button:hover {
+    opacity: 1;
 }
+
 .fa {
-  padding: 20px;
-  font-size: 80px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+    padding: 20px;
+    font-size: 80px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
 .fa:hover {
-	opacity: 1;
-
+    opacity: 1;
 }
 
-.fa-facebook {
-	color: white;
-}
-
-.fa-instagram {
-	color: white;
-}
-
-.fa-linkedin {
-	color: white;
-}
-
-.fa-github {
-	color: white;
-}
-
-.fa-twitter {
-	color: white;
-}
-
-.icons {
-	height: px;
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-github, .fa-twitter {
+    color: white;
 }
 
 footer {
-	display: flex;
-	justify-content: space-around;
-	position: relative;
-	top: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+
+.formpage {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+h1 {
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 150px;
+}
+
+#contact-form {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin-top:1%;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 1%;
+    background-color: #ffdfe9;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    padding: 20px 20px;
+    background-color: hotpink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity:0.8 ;
+}
+
+#contact-form button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
 }
 
 
+label {
+    color: brown;
+}
+
+@media (max-width: 768px) {
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; 
+    }
+}
