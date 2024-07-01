@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background-color: #efabc1;
+	background-color: #ffbbd1;
 	 font-family: "Poiret One", sans-serif;
   	font-weight: 600;
   	font-style: normal;
@@ -11,13 +11,16 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px;
-	background-color:#FFB6C1;
+	background-color:#ffdfe9;
+	height: 10vh;
+	border-bottom: solid;
+	border-color: brown;
 
 }
 
 header .logo img {
-	height: 80px;
-	border-radius: 50%;
+	height: 70px;
+	
 }
 
 header nav ul {
@@ -42,13 +45,14 @@ header nav ul li a {
 	display: block;
 	padding: 10px 20px;
 	border-radius: 10px;
-	text-decoration: none;
-	color: white;
-	background-color: rgba(255,255,255,0.2);
+	text-decoration: none;  
+	color: brown;
+	background-color:#ffafc8 ;
+	opacity: 0.8;
 }
 
 header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.5); 
+	opacity: 1; 
 }
 
 
@@ -59,7 +63,8 @@ header nav ul li a:hover {
 	text-align: center;
 	position: relative;
 	padding: 50px 20px;
-	background-color:#ffafc8 ;
+	background-color:#ffdfe9 ;
+	height: 60vh;
 }
 
 .bg .backgroundblock {
@@ -94,7 +99,7 @@ header nav ul li a:hover {
 }
 
 .text h1 {
-	font-size: 30px;
+	font-size: 70px;
 	letter-spacing: 3px;
 	margin: 0;
 }
@@ -112,27 +117,64 @@ header nav ul li a:hover {
 	border-radius: 5px;
 }
 
-.downloadcv {
+
+
+
+button {
+	background-color: white;
+	color: brown;
+	opacity: 0.8;
+	border: none;
+	height: 30px;
+	padding: 7px;
+}
+
+button:hover{
+	opacity: 1;
+}
+.fa {
+  padding: 20px;
+  font-size: 80px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+	opacity: 1;
+
+}
+
+.fa-facebook {
+	color: white;
+}
+
+.fa-instagram {
+	color: white;
+}
+
+.fa-linkedin {
+	color: white;
+}
+
+.fa-github {
+	color: white;
+}
+
+.fa-twitter {
+	color: white;
+}
+
+.icons {
+	height: px;
+}
+
+footer {
 	display: flex;
-	justify-content: center;
-	padding: 20px;
-	color: white;
-	text-decoration: none;
+	justify-content: space-around;
+	position: relative;
+	top: 10px;
 }
 
-.downloadcv a {
-	margin: 0 20px;
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	background-color: rgba(255, 255, 255, 0.3);
-	padding: 10px;
-	border-radius: 10px;
-
-}
-
-.downloadcv a:hover{
-	  background-color: rgba(255, 255, 255, 0.5); 
-
-}
 
