@@ -7,34 +7,35 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr; 
     padding: 15px;
     background-color: #ffdfe9;
-    height: 10vh;
+    height: 9vh;
     border-bottom: solid 1px brown;
 }
 
 header .logo img {
-    height: 70px;
+    grid-column: 1;
+    height: 10vh;
+    padding-bottom:20px ;
 }
 
 header nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding-right: 50px;
-    gap: 50px;
+    display: inline-flex;
+    padding-left: 45%;
+    gap: 30px;
 }
+
 
 header nav ul li {
     margin-left: 20px;
     display: flex;
-    justify-content: space-around;
     font-family: "Poiret One", sans-serif;
     font-weight: bold;
     font-style: normal;
+    gap: 30px;
+
 }
 
 header nav ul li a {
@@ -52,12 +53,13 @@ header nav ul li a:hover {
 }
 
 .bg {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto auto auto; /* Adjust rows as needed */
     align-items: center;
     text-align: center;
     position: relative;
-    padding: 50px 20px;
+    padding: 50px 40px;
     background-color: #ffdfe9;
     height: 60vh;
 }
@@ -74,9 +76,12 @@ header nav ul li a:hover {
 
 .bg .profileimage {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 0vh;
     margin-bottom: 20px;
+    grid-row: 2;
+    padding-left: 45%;
+
 }
 
 .profileimage img {
@@ -90,6 +95,8 @@ header nav ul li a:hover {
     max-width: 800px;
     z-index: 1;
     color: brown;
+    grid-row: 3;
+    padding-left: 24%;
 }
 
 .text h1 {
@@ -102,9 +109,11 @@ header nav ul li a:hover {
 .text p {
     font-size: 20px;
     margin-bottom: 15px;
+    padding-left: 2%;
 }
 .btncon {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     justify-content: center;
 }
@@ -139,6 +148,7 @@ header nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    grid-column: span 5;
 }
 
 .fa:hover {
@@ -150,10 +160,12 @@ header nav ul li a:hover {
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
     position: relative;
     top: 10px;
+    background-color:;
 }
 
 .formpage {
@@ -168,6 +180,12 @@ h1 {
     color: brown;
     display: flex;
     justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: brown;
 }
 
 textarea {
@@ -228,15 +246,18 @@ textarea {
 }
 
 #contact-form button {
-    padding: 20px 20px;
+    padding:2%;
     background-color: hotpink;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     opacity:0.8 ;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 #contact-form button:hover {
     opacity: 1;
@@ -259,3 +280,4 @@ label {
         font-size: 14px; 
     }
 }
+
