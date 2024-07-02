@@ -63,7 +63,7 @@ header nav ul li a:hover {
 }
 
 .bg .backgroundblock {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -103,28 +103,34 @@ header nav ul li a:hover {
     font-size: 20px;
     margin-bottom: 15px;
 }
+.btncon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
-.learnmore {
+.btn {
     display: inline-block;
-    padding: 7px;
-    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: brown;
     text-decoration: none;
     border-radius: 5px;
-}
-
-button {
-    background-color: white;
-    color: brown;
-    opacity: 0.8;
-    border: none;
-    height: 30px;
-    padding: 7px;
+    text-align: center;
     cursor: pointer;
+    opacity: 0.7;
+    background-color: white;
 }
 
-button:hover {
+.btn:hover{
     opacity: 1;
 }
+
+.learn btn {
+    padding-right:5px;
+    padding-left: 5px;
+}
+
 
 .fa {
     padding: 20px;
