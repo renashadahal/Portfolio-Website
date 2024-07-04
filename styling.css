@@ -250,13 +250,6 @@ textarea {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-}
-
-
 label {
     color: brown;
 }
@@ -305,7 +298,6 @@ label {
         grid-template-rows: repeat(3, auto);
     }
 }
-
 .fa {
     padding: 10px;
     font-size: 30px;
