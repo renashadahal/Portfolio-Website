@@ -8,26 +8,25 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
+    grid-template-columns: auto 1fr; 
     padding: 15px;
     background-color: #ffdfe9;
-    border-bottom: solid 1px brown;
     height: 9vh;
+    border-bottom: solid 1px brown;
 }
 
 header .logo img {
-    height: 8vh;
+    grid-column: 1;
+    height: 10vh;
+    padding-bottom:20px ;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: inline-flex;
+    padding-left: 45%;
     gap: 30px;
 }
+
 
 header nav ul li {
     margin-left: 20px;
@@ -35,6 +34,8 @@ header nav ul li {
     font-family: "Poiret One", sans-serif;
     font-weight: bold;
     font-style: normal;
+    gap: 30px;
+
 }
 
 header nav ul li a {
@@ -51,21 +52,10 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
-header .navi.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    top: 9vh;
-    left: 0;
-    background-color: #ffdfe9;
-}
-
 .bg {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto auto auto; /* Adjust rows as needed */
     align-items: center;
     text-align: center;
     position: relative;
@@ -75,7 +65,7 @@ header .navi.active {
 }
 
 .bg .backgroundblock {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -90,7 +80,8 @@ header .navi.active {
     height: 30vh;
     margin-bottom: 20px;
     grid-row: 2;
-    justify-self: center;
+    padding-left: 45%;
+
 }
 
 .profileimage img {
@@ -105,8 +96,7 @@ header .navi.active {
     z-index: 1;
     color: brown;
     grid-row: 3;
-    justify-self: center;
-    text-align: center;
+    padding-left: 24%;
 }
 
 .text h1 {
@@ -119,8 +109,8 @@ header .navi.active {
 .text p {
     font-size: 20px;
     margin-bottom: 15px;
+    padding-left: 2%;
 }
-
 .btncon {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -141,19 +131,43 @@ header .navi.active {
     background-color: white;
 }
 
-.btn:hover {
+.btn:hover{
     opacity: 1;
+}
+
+.learn btn {
+    padding-right:5px;
+    padding-left: 5px;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 80px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    grid-column: span 5;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-github, .fa-twitter {
+    color: white;
 }
 
 footer {
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: center;
-    gap: 10px;
-    background-color: #ffbbd1;
-    padding: 20px 0;
+    position: relative;
+    top: 10px;
+    background-color:;
 }
-
+/*contact page is started!*/
 
 .formpage {
     display: flex;
@@ -266,7 +280,16 @@ label {
     .form-group textarea {
         font-size: 14px; 
     }
-} 
+}
+
+/*project page from here!*/
+
+
+.pictures label {
+    color: brown;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .pictures {
     display: grid;
@@ -278,14 +301,17 @@ label {
     padding-right: 6%;
 }
 
-.pro {
+.pro{
     opacity: 1;
-    border-radius: 5px;
+
 }
 
 .pro:hover {
     opacity: 0.8;
+
 }
+
+
 
 @media (max-width: 1200px) {
     .pictures {
@@ -301,76 +327,6 @@ label {
 
 @media (max-width: 600px) {
     .pictures {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-}
-
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    color: white;
-}
-
-.fa:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr auto;
-    }
-
-    header .logo {
-        justify-self: start;
-    }
-
-    header .container {
-        display: block;
-    }
-
-    header .navi {
-        display: none;
-    }
-
-    header .navi.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 9vh;
-        left: 0;
-        background-color: #ffdfe9;
-    }
-
-    .bg .profileimage {
-        justify-self: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .text h1 {
-        font-size: 30px;
-    }
-
-    .text p {
-        font-size: 18px;
-    }
-
-    .btncon {
         grid-template-columns: 1fr;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-    }
-
-    .fa {
-        font-size: 24px;
     }
 }
